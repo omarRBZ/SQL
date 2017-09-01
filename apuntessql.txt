@@ -1,0 +1,50 @@
+si no se especifica el dato en la sentencia insert in to dependera del valor que rcibira la columna 
+si no lo especificas esperara un dato null 
+
+se pude hacer uso de funciones especiales para insertar datos 
+se pueden copiar usando una subconsulta  no es nesesario usar la palabra VALUES 
+
+los valores o numeros de columnas de ben de ser los mismos dentro del subquery 
+
+
+update nos sirve para actualizar los datos para ello debemos de especificar la tabla seguida de la 
+palabra set con el valor especificado y una clausula where para que solo a ese registro se le aplique seguido de un ;
+
+
+se puede usar subconsultas para actualizar los datos de una tabla usando los subquerys 
+se pueden actualizar siempre y cuando no se pueden alterar los constrans 
+
+delete la palabra from es opcional el nombre de la tabla y una condicion donde todos los registros que cumplan la condicion van hacer eliminados 
+si no se aplica la clausula where se aplica a todos los registros 
+nos se puede eliminar con registros que hace llavez foraneas 
+
+//reglas de integridad  que susede al actualizar o al borrar 
+
+
+defalt para insertar o modificar registros para inicializar los valores 
+merge permite datos de dos tablas y combinarlas en una si un dato no existe en se agrega ala tabla creada , permitiendo actualizar 
+los datos que hay en las dos tablas.
+
+
+TRANSACCION 
+conjunto de sentencias dml que hacen un cambio constente de la base de datos 
+una transaccion va empesar cuando una sentencia 
+ddl todas las que definen al lenguaje modifcan crean  
+dcl control de la lenguaje 
+
+
+commit y rolback 
+commit salva las sentencias echas para confirmar los cambios 
+roalback regresa en un punto en que no fallaba 
+
+tuncate es un ddl genera su propio commit
+si se aplica no regresar al los cambios atrasados 
+
+
+piblic connection  getConnection(){
+    
+}
+
+
+
+
